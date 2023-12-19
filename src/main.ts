@@ -1,24 +1,19 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import { Snow } from "./snow";
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+new Snow({
+  accumulate: false,
+  count: 1000,
+  size: { min: 2, max: 5 },
+  fallSpeed: { min: 0.3, max: 1 },
+  wind: { min: -1, max: 0 },
+  initiateTime: 20000,
+  opacity: { min: 0.1, max: 0.8 },
+});
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+document.body.style.background = "url(https://images5.alphacoders.com/133/1339874.png)";
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundAttachment = "fixed";
+document.body.style.backgroundPosition = "center";
+document.body.style.backgroundRepeat = "no-repeat";
+document.body.style.backgroundOrigin = "content-box";
+document.body.style.backgroundClip = "content-box";
