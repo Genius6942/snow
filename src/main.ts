@@ -10,7 +10,7 @@ new Snow({
   opacity: { min: 0.1, max: 0.8 },
 });
 
-document.body.style.background = "url(https://images5.alphacoders.com/133/1339874.png)";
+document.body.style.background = "url(https://images.pexels.com/photos/688659/pexels-photo-688659.jpeg?cs=srgb&dl=pexels-simon73-688659.jpg&fm=jpg)";
 document.body.style.backgroundSize = "cover";
 document.body.style.backgroundAttachment = "fixed";
 document.body.style.backgroundPosition = "center";
